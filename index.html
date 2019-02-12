@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HelloPrint Challenge</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vanilla.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="images/header_banner.png">
+        </header>
+        <div id="playerWrapper">
+            <div class="el" id="player1">
+                <p>Enter a number between 0 and 100</p>
+                <input type="number" id="inputPlayer1" class="inputBox" min="0" max="100" value=0>
+                <input type="submit" value="Submit" class="submitBtn" id="button1" onclick="playerGuess(1)">
+                <p id="dist" class="message-1"></p>
+            </div>
+            <div class="el" id="player2">
+                <p>Enter a number between 0 and 100</p>
+                <input type="number" id="inputPlayer2" class="inputBox" min="0" max="100" value=0>
+                <input type="submit" value="Submit" class="submitBtn" id="button2" onclick="playerGuess(2)">
+                <p id="dist" class="message-2"></p>
+            </div>
+            <div class="el" id="player3">
+                <p>Enter a number between 0 and 100</p>
+                <input type="number" id="inputPlayer3" class="inputBox" min="0" max="100" value=0>
+                <input type="submit" value="Submit" class="submitBtn" id="button3" onclick="playerGuess(3)">
+                <p id="dist" class="message-3"></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>

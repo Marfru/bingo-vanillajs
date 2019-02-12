@@ -1,0 +1,121 @@
+#container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#playerWrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+#playerWrapper .el {
+    float: left;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #dfe6e9;
+}
+
+#playerWrapper .el:not(:first-child) {
+    margin-left: 4.6%;
+}
+
+#playerWrapper .el p {
+    display: block;
+    color: #b2bec3;
+    padding: 0 63px;
+    margin: 0 auto;
+}
+
+#playerWrapper .el p#dist {
+    margin-top: 20px;
+    color: #5BA717;
+    font-weight: bold;
+}
+
+#playerWrapper .el .inputBox {
+    display: block;
+    margin: 0 auto;
+    padding: 7px;
+    width: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid #dfe6e9;
+    margin-top: 10px;
+}
+
+#playerWrapper .el .inputBox:focus {
+    outline: none;
+}
+
+.submitBtn {
+    background-color: #5BA717;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 1px 2px #537c28;
+    border-color: transparent !important;
+}
+
+.submitBtn:focus {
+    outline: none;
+}
+
+.submitBtn:active {
+    box-shadow: none;
+    top: 4px;
+}
+
+.submitBtn[disabled] {
+    background-color: #dfe6e9;
+    box-shadow: 1px 2px #aeb1b2;
+    cursor: auto;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -500px;
+    margin-left: -250px;
+    background: url('https://media.giphy.com/media/3oEdv3Ul8g6BCngQ36/giphy.gif') center center no-repeat;
+}
+
+
+@media only screen and (max-width: 775px) {
+    #playerWrapper .el {
+        width: 100%;
+        transition: .5s cubic-bezier(.5,0,.1,1);
+    }
+    #playerWrapper .el:not(:first-child) {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    #gameOver {
+        background-size: 300px 200px;
+        margin-top: -590px;
+    }
+}
